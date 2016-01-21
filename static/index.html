@@ -1,89 +1,128 @@
-<!doctype html>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+	<title>KEVIN PAN</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+
+<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add Scroll -->
+	<script type="text/javascript" src="./js/scroll.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="./fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+	<script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox({
+				helpers : {
+					title: {
+						type: 'inside'
+					},
+					overlay : {
+						locked: false
+					}
+				}
+			});
+		});
+	</script>
+
 </head>
 
 <body>
-	<div class="container">
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
-		</div>
+	<div class="navigation">
+		<a id="scr1" target="id0">Home</a>
+		<a id="scr2" target="id1">About</a>
+		<a id="scr5" target="id4">Projects</a>
+		<a id="scr3" target="id2">Gallery</a>
+		<a id="scr4" target="id3">Contact</a>
+		<a href="./PanKevin_Resume.pdf">Resume</a>
+		<a href="./mushroom/index.html">Mushroom</a>
+	</div>
 
-
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
-			</a>
-		</div>
-		<div class="project" id="project2">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
+	<div class="home" id="id0">
+		<div class="vertCenter">
+			<div class="lightbox">
+				<u><strong>KEVIN</strong>PAN</u>
+				<div class="UCSD2016">UCSD 2016</div>
+			</div>
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<div class="aboutBig" id="id1">
+		<div class="vertCenter">
+			<div class ="aboutContainer">
+				<div class ="aboutText vertCenter">
+					<div class="aboutTitle">
+						ABOUT
+					</div>
+					Kevin Pan is currently a senior at UCSD studying Computer Science. He has experience as a programmer, but also has an interest in digital illustration, motion graphics, and web design. On a typical day, he enjoys playing video games while sipping on some passion fruit green tea.
+				</div>
+				<div class ="aboutPic vertCenter"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="projBig" id="id4">
+		<div class="vertCenter">
+			<div class="toggler">
+				<div class ="aboutContainer">
+					<div class ="projText vertCenter">
+						<div class="aboutTitle">
+							MUSHROOMS
+						</div>
+						This project was a "drawing tool" using a Google Sheets backend. You can click on any square to plant a mushroom, or press on a mushroom to remove it. Every 10 actions will cause existing mushrooms to grow :).
+					</div>
+					<div class ="projPic vertCenter"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="galleryBig" id="id2">
+		<div class="galleryContainer vertCenter">
+			<div class="galleryTitle">
+				GALLERY
+			</div>
+			<div class="galleryPic1 lighter">
+				<a class="fancybox" rel="gallery"  title="A colorful card design for the Taiwanese American Student Association at UCSD. I used a variety of colors to keep the image bright, happy, and exciting, but I kept them to more of a pastel tone as to not overwhelm the viewer. It is a very whimsical design, and is supposed to evoke a feeling of joy. Tools used: Adobe Illustrator." href="./img/tasaduck.png"><img class="galleryPic1" src="./img/tasaducksquare.png" alt=""></a>
+			</div>
+			<div class="galleryPic2 lighter">
+				<a class="fancybox" rel="gallery"  title="My final project for VIS 1. There was no prompt, so I decided to go with my forte of colorful, collage-like compositions. In this case I wanted to be bold with the colors, so I kept them more vibrant, rather than fading them out. I just started from the cloud, and slowly added on more and more elements until I had a reasonably complex piece, with a still natural flow to it. Tools Used: Adobe Illustrator."  href="./img/rainbowcloud2.png"><img class="galleryPic1" src="./img/rainbowcloudsquare.png" alt=""></a>
+			</div>
+			<div class="galleryPic3 lighter">
+				<a class="fancybox" rel="gallery"  title="Class Notes. I drew this during my physics class in highschool. I did not need to take notes, so instead I drew a bunch of random cartoons on my paper. Afterwards, I decided to color it in with highlighters, and I really liked how the color scheme turned out. This lead to a future of colorful works all the time. Tools Used: Black Felt Tip Marker, Highlighters on binder paper." href="./img/fbcover.jpg"><img class="galleryPic1" src="./img/fbcoversquare.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="contactBig" id="id3">
+		<div class="contactTitle">CONTACT</div>
+		<div class="contactText">EMAIL: kevincpan@gmail.com
+		</div>
+		<div class="logoBox">
+			<a href="https://www.facebook.com/PanOfSoupAndOtherDeliciousLiquidsThatCanFitInAPan"><img class="fblogo vertCenter lighter" src="./img/Facebook_icon.svg" alt=""></a>
+			<a href="https://www.behance.net/thebigeZ"><img class="belogo vertCenter lighter" src="./img/behance-be-logo.svg" alt=""></a>
+			<a href="https://www.linkedin.com/pub/kevin-pan/8a/115/626"><img class="belogo vertCenter lighter" src="./img/linkedin.svg" alt=""></a>
+		</div>
+	</div>
+
 </body>
+
+
+
 </html>
